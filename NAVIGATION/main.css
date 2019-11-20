@@ -1,0 +1,91 @@
+.menu-toggle {
+  flex: 0 0 auto;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  position: relative;
+}
+.hamburger {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.hamburger span {
+  display: block;
+  width: 18px;
+  height: 2px;
+  margin-bottom: 3px;
+  overflow: hidden;
+  position: relative;
+}
+.hamburger span:last-child {
+  margin: 0;
+}
+.hamburger span:after,
+.hamburger span:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #f1f1f1;
+  transform: translateX(-200%);
+  transition: transform ease 0.3s;
+}
+.hamburger span:after {
+  transform: translateX(0);
+}
+.hamburger span:nth-child(2):after,
+.hamburger span:nth-child(2):before {
+  transition-delay: 75ms;
+}
+.hamburger span:last-child:after,
+.hamburger span:last-child:before {
+  transition-delay: 150ms;
+}
+.menu-toggle:hover .hamburger span:before {
+  transform: translateX(0);
+}
+.menu-toggle:hover .hamburger span:after {
+  transform: translateX(200%);
+}
+.menu-toggle.active .hamburger span:before {
+  transform: translateX(100%);
+}
+.menu-toggle.active .hamburger span:after {
+  transform: translateX(200%);
+}
+.cross span {
+  display: block;
+  width: 18px;
+  height: 2px;
+  background-color: #0f0f0f;
+  transform: translateY(50%) rotate(45deg) scaleX(0);
+  transition: transform ease 0.2s;
+}
+.cross span:last-child {
+  transform: translateY(-50%) rotate(-45deg) scaleX(0);
+}
+.menu-toggle.active .cross span {
+  transition-delay: 450ms;
+  transform: translateY(50%) rotate(45deg) scaleX(1);
+}
+.overlay a span:focus,
+.overlay a span:hover,
+.overlay a:hover {
+  color: #f1f1f1;
+}
+.menu-toggle.active .cross span:last-child {
+  transform: translateY(-50%) rotate(-45deg) scaleX(1);
+}
+.headerAbsolute {
+  position: absolute;
+  right: 11vw;
+  top: 1vw;
+}
+.headerLogoAbsolute {
+  position: absolute;
+  top: 26px;
+  right: 57vw;
+  z-index: 2000;
+}

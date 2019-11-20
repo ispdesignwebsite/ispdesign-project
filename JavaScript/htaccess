@@ -1,0 +1,7 @@
+Redirect 301 / http://www.ispdesign.com/
+
+<IfModule mod_headers.c>
+Header set Connection keep-alive
+</IfModule>
+
+ErrorDocument 404 /404.html
