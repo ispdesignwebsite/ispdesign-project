@@ -4,3 +4,30 @@ RewriteCond %{HTTPS} off
 RewriteCond %{HTTP_HOST} ^(www\.)?ispdesign\.com$ [NC]
 RewriteRule ^(.*)$ https://ispdesign.com/$1 [L,R=301]
 </IfModule>
+
+<IfModule mod_expires.c>
+ExpiresActive On
+ExpiresByType /FOOTER/ISP-LOGO-WHITE.png "access 1 year" 
+ExpiresByType /NAVIGATION/main.css "access 1 year" 
+ExpiresByType /FOOTER/styles.css "access 1 year" 
+ExpiresByType /css/important.css "access 1 year" 
+ExpiresByType /css/layout.css "access 1 year" 
+ExpiresByType /css/mobile.css "access 1 year" 
+ExpiresByType /externalLibrariesSource/aos.css "access 1 year" 
+ExpiresByType /assets/images/general/ISP-LOGO-WHITE.png "access 1 year" 
+ExpiresByType /assets/images/home/section4.jpg "access 1 year" 
+ExpiresByType /assets/images/home/prj-mgm-2.jpg "access 1 year" 
+ExpiresByType /NAVIGATION/all.css "access 1 year" 
+ExpiresByType /FOOTER/BTYBYT.png "access 1 year" 
+ExpiresByType /FOOTER/TBC.png "access 1 year" 
+ExpiresByType /externalLibrariesSource/aos.js "access 1 year" 
+ExpiresByType /NAVIGATION/jquerry.js "access 1 year" 
+ExpiresByType /NAVIGATION/create.js "access 1 year" 
+ExpiresByType /NAVIGATION/all.js "access 1 year" 
+ExpiresByType /NAVIGATION/pollyfill.js "access 1 year" 
+ExpiresByType /JavaScript/main.js "access 1 year" 
+ExpiresByType /assets/images/home/rgvxxx.png "access 1 year"
+ExpiresDefault "access 1 month"
+</IfModule>
+
+ 
