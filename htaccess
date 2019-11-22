@@ -1,4 +1,4 @@
-Redirect 301 / https://www.ispdesign.com/
+Redirect 301 / http://www.ispdesign.com/
 
 <IfModule mod_headers.c>
 Header set Connection keep-alive
