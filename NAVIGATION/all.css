@@ -201,13 +201,13 @@ table {
 	box-sizing: border-box
 }
 
-::-moz-selection {
+/* ::-moz-selection {
 	background: #000
 }
 
 ::selection {
 	background: #000
-}
+} */
 
 body {
 	color: #303030;
