@@ -160,12 +160,6 @@
   font-size: 15px;
 }
 
-/* .clientsUl {
-  list-style: none;
-  -webkit-column-count: 3;
-  -moz-column-count: 3;
-  column-count: 3;
-} */
 @media only screen and (max-width: 600px) {
   .liMargin .col-sm {
     margin-top: -15px !important;
@@ -228,8 +222,6 @@
   background-image: url("../assets/images/team/section6.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  /* background-attachment: fixed; */
-  /* background-position: center; */
 }
 
 .last-section-alignment {
