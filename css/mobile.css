@@ -186,6 +186,34 @@
     text-align: center;
   }
 
+  /* blog section */
+  .blog-p1 {
+    text-align: center !important;
+    margin-top: 5vh;
+    margin-left: 0px;
+  }
+  .blog-h1 {
+    text-align: center !important;
+    margin-left: 0px;
+  }
+  .blog-p2 {
+    text-align: center !important;
+    margin-left: 5vw !important;
+  }
+  .blog-btn {
+    text-align: center !important;
+    margin-left: 0px;
+  }
+  .blog-section {
+    margin-bottom: 12vh;
+  }
+
+  .blog-img {
+    padding-left: 20px !important;
+    margin-right: 20px !important;
+    width: 350px;
+  }
+
   .indi2h1 {
     font-size: 30px;
     font-weight: 600;
