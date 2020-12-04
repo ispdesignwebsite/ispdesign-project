@@ -395,6 +395,7 @@
 .blog-p1 {
   /* text-align: right; */
   margin-left: 50px;
+  margin-top: 50px;
 }
 .blog-h1 {
   /* text-align: right; */
@@ -413,7 +414,8 @@
   margin-left: 50px;
 }
 .blog-img {
-  object-fit: cover;
+  /* object-fit: cover;
   height: 600px;
-  width: 400px;
+  width: 400px; */
+  width: 100%;
 }
