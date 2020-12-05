@@ -38,9 +38,7 @@ var blogDescription = document.getElementById("js-blog-description");
 var linkToTheBlog = document.getElementById("js-link-to-the-blog");
 
 async function getBlogPosts() {
-  let response = await fetch("http://blog.ispdesign.com/wp-json/wp/v2/posts", {
-    mode: "cors",
-  });
+  let response = await fetch("http://blog.ispdesign.com/wp-json/wp/v2/posts");
   let data = await response.json();
   let latestPost = data[0];
   return latestPost;
