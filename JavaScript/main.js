@@ -32,27 +32,27 @@ $(document).ready(function () {
   });
 
 // blog
-var blogImg = document.getElementById("js-blog-img");
-var blogHeading = document.getElementById("js-blog-heading");
-var blogDescription = document.getElementById("js-blog-description");
-var linkToTheBlog = document.getElementById("js-link-to-the-blog");
+// var blogImg = document.getElementById("js-blog-img");
+// var blogHeading = document.getElementById("js-blog-heading");
+// var blogDescription = document.getElementById("js-blog-description");
+// var linkToTheBlog = document.getElementById("js-link-to-the-blog");
 
-async function getBlogPosts() {
-  let response = await fetch("https://blog.ispdesign.com/wp-json/wp/v2/posts");
-  let data = await response.json();
-  let latestPost = data[0];
-  return latestPost;
-}
+// async function getBlogPosts() {
+//   let response = await fetch("https://blog.ispdesign.com/wp-json/wp/v2/posts");
+//   let data = await response.json();
+//   let latestPost = data[0];
+//   return latestPost;
+// }
 
-getBlogPosts().then((latestPost) => {
-  let imgHTML = latestPost.content.rendered;
-  let htmlObject = document.createElement("div");
-  htmlObject.innerHTML = imgHTML;
-  let imgSrc = htmlObject.querySelector("img").src;
-  blogImg.src = imgSrc;
-  blogHeading.innerHTML = latestPost.title.rendered;
-  let descriptionText = latestPost.excerpt.rendered;
-  let descriptionTextNoChar = descriptionText.replace("[&hellip;]", "");
-  blogDescription.innerHTML = descriptionTextNoChar;
-  linkToTheBlog.href = latestPost.link;
-});
+// getBlogPosts().then((latestPost) => {
+//   let imgHTML = latestPost.content.rendered;
+//   let htmlObject = document.createElement("div");
+//   htmlObject.innerHTML = imgHTML;
+//   let imgSrc = htmlObject.querySelector("img").src;
+//   blogImg.src = imgSrc;
+//   blogHeading.innerHTML = latestPost.title.rendered;
+//   let descriptionText = latestPost.excerpt.rendered;
+//   let descriptionTextNoChar = descriptionText.replace("[&hellip;]", "");
+//   blogDescription.innerHTML = descriptionTextNoChar;
+//   linkToTheBlog.href = latestPost.link;
+// });
