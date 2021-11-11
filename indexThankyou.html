@@ -159,28 +159,8 @@
       })();
     </script>
     <!-- segment -->
-    <!-- emailjs -->
-    <script
-      type="text/javascript"
-      src="https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js"
-    ></script>
-    <script type="text/javascript">
-      (function () {
-        emailjs.init("user_F7qGXjFgcCriieOyYFvZL");
-      })();
-    </script>
-    <script type="text/javascript">
-      window.onload = function () {
-        document
-          .getElementById("contact-form")
-          .addEventListener("submit", function (event) {
-            event.preventDefault();
-            this.contact_number.value = (Math.random() * 100000) | 0;
-            emailjs.sendForm("gmail", "ispdesigncontact", this);
-          });
-      };
-    </script>
-    <!-- emailjs -->
+   
+    
   </head>
   <body class="bg-designBlue">
     <!-- Site navigation -->
@@ -411,54 +391,8 @@
           </div>
         </div>
         <div class="col">
-          <form id="contact-form">
-            <ul>
-              <li>
-                <input type="hidden" name="contact_number" />
-                <label>Name</label>
-                <br />
-                <input type="text" name="user_name" />
-              </li>
-              <li></li>
-              <li>
-                <label>Email</label>
-                <br />
-                <input type="email" name="user_email" />
-              </li>
-              <li>
-                <label>Phone</label>
-                <br />
-                <input type="number" name="user_phone" />
-              </li>
-              <li>
-                <label>Message</label>
-                <br />
-                <textarea rows="7" cols="50" name="contact"></textarea>
-              </li>
-              <li>
-                <br />
-                <!-- <input type="submit" value="Send" /> -->
-                <div class="contact-button">
-                  <button
-                    type="submit"
-                    value="Send"
-                    class="whiteButton hang"
-                    id="submitButton"
-                  >
-                    SUBMIT
-                  </button>
-                </div>
-                <div
-                  style="display: none"
-                  class="alert alert-success mt-5 submitMessage text-center"
-                  role="alert"
-                  id="submitMessage"
-                >
-                  The Form has been submitted!
-                </div>
-              </li>
-            </ul>
-          </form>
+          
+          
         </div>
       </div>
     </div>
