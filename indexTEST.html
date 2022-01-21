@@ -1,512 +1,109 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="no-js">
   <head>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-145760456-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-145760456-1');
-</script>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>ISP | Timeline</title>
-    <!-- META TAGS COMMENT -->
-<!-- PAGE DESCRIPTION COMMENT -->
-<meta name="description" content="With over two decades in the business of architectural lighting design, ISP boasts an impressive portfolio with notable project milestones. " />
-<!-- KEYWORDS COMMENT -->
-<meta name="keywords" content="architectural lighting design" />
-
-<!-- <meta name="author" content="open source" />
-<meta property="og:title" content="ISP Design" />
-<meta property="og:locale" content="en_US" />
-<meta property="og:site_name" content="ISP Design" />
-<meta property="og:url" content="https://ispdesign.com/" />
-<meta property="og:type" content="website" /> -->
-<!-- OG TAGS COMMENT -->
-<!-- <meta
-  property="og:image"
-  content="https://github.com/wearebrandcollective/timeline/blob/master/assets/images/ISPjournal/apple2019.gif?raw=true"
-/> -->
-<!-- GRAPH COMMENT -->
-<!-- <meta
-  property="og:description"
-  content="description description description description"
-/>
-<meta name="twitter:card" content="" />
-<meta name="twitter:site" content="" />
-<meta name="twitter:title" content="" />
-<meta name="twitter:description" content="" />
-<meta
-  name="twitter:image"
-  content="https://github.com/wearebrandcollective/timeline/blob/master/assets/images/ISPjournal/apple2019.gif?raw=true"
-/>
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<meta name="theme-color" content="#dab28d" /> -->
-<!-- META TAGS COMMENT^ -->
-<!-- favicon -->
-<link
-rel="apple-touch-icon"
-sizes="180x180"
-href="./assets/favicon_io/apple-touch-icon.png"
-/>
-<link
-rel="icon"
-type="image/png"
-sizes="32x32"
-href="./assets/favicon_io/favicon-32x32.png"
-/>
-<link
-rel="icon"
-type="image/png"
-sizes="16x16"
-href="./assets/favicon_io/favicon-16x16.png"
-/>
-<link rel="manifest" href="./assets/favicon_io/site.webmanifest" />
-<!-- favicon -->
-
-    <!-- Site navigation -->
-    <link rel="stylesheet" type="text/css" href="./NAVIGATION/main.css" />
-    <link rel="stylesheet" type="text/css" href="./NAVIGATION/all.css" />
-    <!-- Site navigation -->
-    <!-- Site footer -->
-    <link rel="stylesheet" type="text/css" href="FOOTER/styles.css" />
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-      crossorigin="anonymous"
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>ISP</title>
+    <meta
+      name="description"
+      content="A slider made with the Pieces library where slides are animated in a fragmented look."
     />
-    <!-- local below ... -->
-    <!-- <link rel="stylesheet" href="externalLibrariesSource/bootstrapLink.css" /> -->
-    <!-- Site footer -->
+    <meta
+      name="keywords"
+      content="slideshow, slider, pieces, fragments, animation, svg, canvas, javascript"
+    />
+    <meta name="author" content="" />
+    <!-- <link rel="shortcut icon" href="on.ico" /> -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
 
-    <!-- Global css -->
-   
-    <link rel="stylesheet" type="text/css" href="./css/layout.css" />
-    <link rel="stylesheet" type="text/css" href="./css/mobile.css" />
-    <!-- Global css -->
-    <!-- External lib -->
-    <!-- <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> -->
-    <!-- local below ... -->
-    <link rel="stylesheet" href="externalLibrariesSource/aos.css" />
-    <!-- External lib -->
-    <!-- Site navigation -->
+    <link rel="stylesheet" type="text/css" href="css/base.css" />
+    <link rel="stylesheet" type="text/css" href="css/slider.css" />
     <script>
-      // auto scroll to timeline
-      setTimeout(() => {
-        function Scrolldown() {
-          if (
-            /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
-              navigator.userAgent
-            )
-          ) {
-          } else {
-            window.scroll(0, 270);
-          }
-        }
-
-        Scrolldown();
-      }, 2250);
+      document.documentElement.className = "js";
+      var supportsCssVars = function() {
+        var e,
+          t = document.createElement("style");
+        return (
+          (t.innerHTML = "root: { --tmp-var: bold; }"),
+          document.head.appendChild(t),
+          (e = !!(
+            window.CSS &&
+            window.CSS.supports &&
+            window.CSS.supports("font-weight", "var(--tmp-var)")
+          )),
+          t.parentNode.removeChild(t),
+          e
+        );
+      };
+      supportsCssVars() ||
+        alert(
+          "Please view this demo in a modern browser that supports CSS Variables."
+        );
     </script>
   </head>
-  <body class="bg-designBlue" id="section1">
-    <!-- Site navigation -->
-
+  <body class="demo-1">
     <div
-      class="l-header-menu bgcheck headerAbsolute"
-      id="trigger-main-menu-open"
+      id="preloadfont"
+      style="color: #20405a; font-family: 'Lato', sans-serif !important;"
     >
-      <div class="headerLogoAbsolute">
-        <a href="https://imgur.com/x0Px6nm"
-          ><img
-            src="https://i.imgur.com/x0Px6nm.png" 
-            title="source: imgur.com"
-            alt="ISP Design Logo"
-            class="headerLogoImage"
-        /></a>
-      </div>
-      <div id="menu" class="menu-toggle">
-        <a href="#" class="hamburger">
-          <span></span>
-          <span></span>
-          <span></span>
-        </a>
-      </div>
+      .
     </div>
-    <div class="l-menu class overlay" id="main-menu" style="display: none;">
-      <div
-        class="l-menu-close trigger-main-menu-close closebtn"
-        id="main-menu-close-button"
-      >
-        &times;
-      </div>
-
-      <div class="l-menu-active">
-        <div class="l-menu-mask"></div>
-        <div class="l-menu-mask"></div>
-        <div class="l-menu-mask"></div>
-        <div class="l-menu-mask"></div>
-
-        <div class="l-menu-link-box">
-          <!-- ----------------111\> -->
-
-          <a
-            class="l-menu-link who trigger-menu-link-pjax"
-            href="indexVision.html"
-            ><span style="opacity: 0; transform: scale(1.3) translateY(50%);"
-              >VISION</span
-            >
-            <div class="l-menu-link-border-mask">
-              <div class="l-menu-link-border"></div>
-            </div>
-          </a>
-          <div class="l-menu-bg-vision"></div>
-          <!-- ----------------111^^^\> -->
-
-          <!-- ----------------222\> -->
-          <a
-            class="l-menu-link what trigger-menu-link-pjax"
-            href="indexTimeline.html"
-            ><span style="opacity: 0; transform: scale(1.3) translateY(50%);"
-              >TIMELINE</span
-            >
-            <div class="l-menu-link-border-mask">
-              <div class="l-menu-link-border"></div>
-            </div>
-          </a>
-          <div class="l-menu-bg-timeline"></div>
-          <!-- ----------------222^^^\> -->
-
-          <!-- ----------------333\> -->
-          <a
-            class="l-menu-link projects trigger-menu-link-pjax"
-            href="indexInnovation.html"
-            ><span
-              class="inno"
-              style="opacity: 0; transform: scale(1.3) translateY(50%);"
-              >INNOVATION</span
-            >
-            <div class="l-menu-link-border-mask">
-              <div class="l-menu-link-border"></div>
-            </div>
-          </a>
-          <div class="l-menu-bg-innovaation"></div>
-          <!-- ----------------333^^^\> -->
-
-          <!-- ----------------444\> -->
-          <a
-            class="l-menu-link career trigger-menu-link-pjax"
-            href="indexExpertise.html"
-            ><span
-              class="expert"
-              style="opacity: 0; transform: scale(1.3) translateY(50%);"
-              >EXPERTISE</span
-            >
-            <div class="l-menu-link-border-mask">
-              <div class="l-menu-link-border"></div>
-            </div>
-          </a>
-          <div class="l-menu-bg-expertise"></div>
-          <!-- ----------------444^^^\> -->
-
-          <!-- ----------------555\> -->
-          <a class="l-menu-link contact no-barba" href="indexTeam.html"
-            ><span style="opacity: 0; transform: scale(1.3) translateY(50%);"
-              >TEAM</span
-            >
-            <div class="l-menu-link-border-mask">
-              <div class="l-menu-link-border"></div>
-            </div>
-          </a>
-          <div class="l-menu-bg-team"></div>
-          <!-- ----------------555^^^\> -->
-          <!-- ----------------666\> -->
-          <a class="l-menu-link contact no-barba" href="indexClients.html"
-            ><span style="opacity: 0; transform: scale(1.3) translateY(50%);"
-              >CLIENTS</span
-            >
-            <div class="l-menu-link-border-mask">
-              <div class="l-menu-link-border"></div>
-            </div>
-          </a>
-          <div class="l-menu-bg-clients"></div>
-          <!-- ----------------666^^^\> -->
-          <!-- ----------------blog\> -->
-          <a class="l-menu-link contact no-barba" href="http://blog.ispdesign.com/"
-            ><span style="opacity: 0; transform: scale(1.3) translateY(50%);"
-              >BLOG</span
-            >
-            <div class="l-menu-link-border-mask">
-              <div class="l-menu-link-border"></div>
-            </div>
-          </a>
-          <div class="l-menu-bg-blog"></div>
-          <!-- ----------------blog^^^\> -->
-          <!-- ----------------777\> -->
-          <a class="l-menu-link contact no-barba" href="indexContact.html"
-            ><span style="opacity: 0; transform: scale(1.3) translateY(50%);"
-              >CONTACT</span
-            >
-            <div class="l-menu-link-border-mask">
-              <div class="l-menu-link-border"></div>
-            </div>
-          </a>
-          <div class="l-menu-bg-contact"></div>
-          <!-- ----------------777^^^\> -->
-        </div>
-
-        <div class="l-menu-lang-social">
-          <div class="l-menu-lang-social-box">
-            <div class="l-menu-social-link-container">
-              <div class="header-address">
-                <a
-                  class="header-address-text-a"
-                  href="https://www.google.com/maps/place/Isp+Design/@25.6094843,-80.3469453,15z/data=!4m2!3m1!1s0x0:0xea067565c96909ec?sa=X&ved=2ahUKEwj90bHXmb_jAhUKvFkKHfJPDZAQ_BIwdXoECGQQCA"
-                  target="_blank" rel="noopener"
-                  ><p>17225 SOUTH DIXIE HWY. STE 201, MIAMI, FL 33157</p></a
-                >
-              </div>
-            </div>
+    <main>
+      <div class="content content--fixed"></div>
+      <div class="content">
+        <!-- Pieces Slider -->
+        <div class="pieces-slider">
+          <!-- Each slide with corresponding image and text -->
+          <div class="pieces-slider__slide">
+            <img class="pieces-slider__image" src="img/1.jpg" alt="" />
+            <h2 class="pieces-slider__text">
+              <!-- &nbsp;&nbsp;S&nbsp;&nbsp;O&nbsp;&nbsp;L&nbsp;&nbsp;U&nbsp;&nbsp;T&nbsp;&nbsp;I&nbsp;&nbsp;O&nbsp;&nbsp;N&nbsp;&nbsp;S&nbsp;&nbsp; -->
+              &nbsp;&nbsp;U&nbsp;&nbsp;N&nbsp;&nbsp;R&nbsp;&nbsp;I&nbsp;&nbsp;V&nbsp;&nbsp;A&nbsp;&nbsp;L&nbsp;&nbsp;E&nbsp;&nbsp;D&nbsp;&nbsp;
+              <!-- &nbsp;&nbsp;L&nbsp;&nbsp;I&nbsp;&nbsp;G&nbsp;&nbsp;H&nbsp;&nbsp;T&nbsp;&nbsp;I&nbsp;&nbsp;N&nbsp;&nbsp;G&nbsp;&nbsp; -->
+            </h2>
           </div>
+          <div class="pieces-slider__slide">
+            <img class="pieces-slider__image" src="img/2.jpg" alt="" />
+            <h2 class="pieces-slider__text">
+              <!-- &nbsp;&nbsp;U&nbsp;&nbsp;N&nbsp;&nbsp;R&nbsp;&nbsp;I&nbsp;&nbsp;V&nbsp;&nbsp;A&nbsp;&nbsp;L&nbsp;&nbsp;E&nbsp;&nbsp;D&nbsp;&nbsp; -->
+              &nbsp;&nbsp;L&nbsp;&nbsp;I&nbsp;&nbsp;G&nbsp;&nbsp;H&nbsp;&nbsp;T&nbsp;&nbsp;I&nbsp;&nbsp;N&nbsp;&nbsp;G&nbsp;&nbsp;
+              <!-- &nbsp;&nbsp;S&nbsp;&nbsp;O&nbsp;&nbsp;L&nbsp;&nbsp;U&nbsp;&nbsp;T&nbsp;&nbsp;I&nbsp;&nbsp;O&nbsp;&nbsp;N&nbsp;&nbsp;S&nbsp;&nbsp; -->
+            </h2>
+          </div>
+          <div class="pieces-slider__slide">
+            <img class="pieces-slider__image" src="img/3.jpg" alt="" />
+            <h2 class="pieces-slider__text">
+              <!-- &nbsp;&nbsp;L&nbsp;&nbsp;I&nbsp;&nbsp;G&nbsp;&nbsp;H&nbsp;&nbsp;T&nbsp;&nbsp;I&nbsp;&nbsp;N&nbsp;&nbsp;G&nbsp;&nbsp; -->
+              &nbsp;&nbsp;S&nbsp;&nbsp;O&nbsp;&nbsp;L&nbsp;&nbsp;U&nbsp;&nbsp;T&nbsp;&nbsp;I&nbsp;&nbsp;O&nbsp;&nbsp;N&nbsp;&nbsp;S&nbsp;&nbsp;
+              <!-- &nbsp;&nbsp;U&nbsp;&nbsp;N&nbsp;&nbsp;R&nbsp;&nbsp;I&nbsp;&nbsp;V&nbsp;&nbsp;A&nbsp;&nbsp;L&nbsp;&nbsp;E&nbsp;&nbsp;D&nbsp;&nbsp; -->
+            </h2>
+          </div>
+          <canvas class="pieces-slider__canvas"></canvas
+          ><!-- Slider buttons: prev and next -->
+          <button
+            class="pieces-slider__button pieces-slider__button--prev hidden"
+            style=""
+          >
+            prev
+          </button>
+          <button
+            class="pieces-slider__button pieces-slider__button--next hidden"
+          >
+            next
+          </button>
         </div>
       </div>
-
-      <div class="l-menu-bg-container">
-        <div class="l-menu-bgs" id="bg1" style="transform: skewX(-74.707deg);">
-          <div
-            class="l-menu-bg"
-            style="width: 10%; transform: translateX(-50%) translateY(-100%) skewX(0deg);"
-          ></div>
-        </div>
-        <div class="l-menu-bgs2" id="bg2">
-          <div
-            class="l-menu-bg"
-            style="transform: translateX(-100%) skewX(74.707deg);"
-          ></div>
-        </div>
-      </div>
-    </div>
-    <!-- Site navigation -->
-
-    <!-- Main header -->
-    <div class="timeline-section1 hideAtMobile">
-      <h1 class="headerTitleForTimeline">TIMELINE</h1>
-    </div>
-    <!-- Main header -->
-
-    <!-- TIMELINE 3.0 -->
-    <div id="timelineIframeDiv">
-      <iframe
-      title="timeline"
-        src="https://ispdesignwebsite.github.io/ispdesign-timeline/"
-        scrolling="yes"
-        frameborder="0"
-        id="timelineIframe"
-        seamless="seamless"
-      ></iframe>
-      <button id="myBtn" class="element hideAtMobile">
-        <a href="#section1"
-          ><img src="./assets/images/general/up.png" alt="Arrow up"
-        /></a>
-      </button>
-      <button id="myBtn2" class="element hideAtMobile hideAtDesktop">
-        <a href="#section2"
-          ><img src="./assets/images/general/down.png" alt="Arrow down"
-        /></a>
-      </button>
-      <button id="myBtn" class="element">
-          <a href="#section1"></a>
-            <!-- slidingIndicator -->
-            <!-- <div id="gradientTimeline" class="hideAtDesktop">^top</top></div> -->
-  
-            <!-- slidingIndicator -->
-          </a>
-        </button>
-
-      <!-- <embed id="timelineEmbed" src="https://wearebrandcollective.github.io/timeline//" /> -->
-    </div>
-    <!-- TIMELINE 3.0 -->
-
-    <!-- Site footer -->
-    <footer class="site-footer hideAtMobile hideAtDesktop" id="section2">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-12 col-md-3">
-            <ul class="list-unstyled">
-              <li class="footerLinks"><a href="indexVision.html">VISION</a></li>
-              <li class="footerLinks">
-                <a href="indexTimeline.html">TIMELINE</a>
-              </li>
-              <li class="footerLinks">
-                <a href="indexInnovation.html">INNOVATION</a>
-              </li>
-              <li class="footerLinks">
-                <a href="indexExpertise.html">EXPERTISE</a>
-              </li>
-              <li class="footerLinks"><a href="indexTeam.html">TEAM</a></li>
-              <li class="footerLinks">
-                <a href="indexClients.html">CLIENTS</a>
-              </li>
-              <li class="footerLinks">
-                <a href="http://blog.ispdesign.com/">BLOG</a>
-              </li>
-              <li class="footerLinks">
-                <a href="indexContact.html">CONTACT</a>
-              </li>
-            </ul>
-          </div>
-
-          <div class="col-xs-6 col-md-3">
-            <ul class="list-unstyled">
-              <li>
-                <a href="tel:305-278-1565" class="footerAddress"
-                  >305 278 1565</a
-                >
-              </li>
-              <br />
-              <li>
-                <a
-                  class="footerAddress"
-                  href="https://www.google.com/maps/place/Isp+Design/@25.6094843,-80.3469453,15z/data=!4m2!3m1!1s0x0:0xea067565c96909ec?sa=X&ved=2ahUKEwj90bHXmb_jAhUKvFkKHfJPDZAQ_BIwdXoECGQQCA"
-                  target="_blank" rel="noopener"
-                  >17225 SOUTH DIXIE HWY. STE 201 <br />
-                  MIAMI, FL 33157
-                </a>
-              </li>
-              <br />
-              <li>
-                <a
-                  class="footerAddress"
-                  style="text-decoration: underline;"
-                  href="mailto:contact@ispdesign.com"
-                  >CONTACT@ISPDESIGN.COM</a
-                >
-              </li>
-              <li class='mt-3'>
-                <a style='display: inline-block !important'
-                class='mr-2'
-                  href="https://www.linkedin.com/company/isp-design-inc./"
-                  target='_blank'
-                  >
-                  <img width='30' src='./assets/images/general/linkedin.png'/></a
-                >
-                <a
-                style='display: inline-block !important'
-                
-                  href="https://www.instagram.com/ispdesigninc/"
-                  target='_blank'
-                  >
-                  <img width='30' src='./assets/images/general/instagram.png'/></a
-                >
-              </li>
-            </ul>
-          </div>
-
-          <div class="col-xs-6 col-md-3"></div>
-
-          <div class="col-xs-6 col-md-3">
-            <ul class="footer-links-img">
-              <li>
-                <a href="index.html" class="absoluteFooterLogo"
-                  ><img
-                    style="float:right;"
-                    class="absoluteFooterLogo"
-                    src="./FOOTER/ISP-LOGO-WHITE.png" alt="ISP Design Logo"
-                /></a>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <hr />
-      </div>
-      <div class="container">
-        <div class="row">
-          <div class="col-md-8 col-sm-6 col-xs-12">
-            <div class="row footer-client-weare">
-              <div class="column mt-1">
-                <a href="index.html">
-                  <img
-                    class="footer-weare footer-links-img"
-                    src="./FOOTER/BTYBYT.png"
-                    alt="The year"
-                  />
-                </a>
-              </div>
-              <div class="column ml-2">
-                <a href="http://www.wearebrandcollective.com/"
-                  ><img
-                    class="footer-client footer-links-img"
-                    src="./FOOTER/TBC.png"
-                    alt="The Brand Collective Logo"
-                /></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-4 col-sm-6 col-xs-12">
-            <ul class="list-unstyled">
-              <li style="float:right;" class="footerLinks">
-                <a href="terms.html">TERMS</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </footer>
-    <!-- Site footer -->
-
-    <!-- Site footer -->
-    <script
-      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-      crossorigin="anonymous"
-    ></script>
-    <!-- local below ... -->
-    <!-- <script src="./externalLibrariesSource/jqueryScript.js"></script> -->
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-      crossorigin="anonymous"
-    ></script>
-    <!-- local below ... -->
-    <!-- <script src="./externalLibrariesSource/propper.js"></!-->
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-      crossorigin="anonymous"
-    ></script>
-    <!-- local below ... -->
-    <!-- <script src="./externalLibrariesSource/bootstrapScript.js"></script> -->
-    <!-- Site footer -->
-
-    <!-- External lib -->
-    <!-- <script src="https://unpkg.com/aos@next/dist/aos.js"></script> -->
-    <!-- local below ... -->
-    <script src="externalLibrariesSource/aos.js"></script>
+    </main>
     <script>
-      AOS.init();
+      document.getElementById("preloadfont").style.fontFamily =
+        "Lato,sans-serif";
     </script>
-    <script src="https://unpkg.com/mailgo@0.6.9/dist/mailgo.min.js"></script>
-    <!-- local below ... -->
-    <!-- <script src="externalLibrariesSource/mailgo.js"></script> -->
-    <script
-      src="//instant.page/1.2.2"
-      type="module"
-      integrity="sha384-2xV8M5griQmzyiY3CDqh1dn4z3llDVqZDqzjzcY+jCBCk/a5fXJmuZ/40JJAPeoU"
-    ></script>
-    <!-- local below ... -->
-    <!-- <script src="externalLibrariesSource/instant.js"></script> -->
-    <!-- External lib -->
-    <!-- Site navigation -->
-    <script src="./NAVIGATION/jquerry.js"></script>
-    <script src="./NAVIGATION/create.js"></script>
-    <script src="./NAVIGATION/all.js"></script>
-    <script src="./NAVIGATION/pollyfill.js"></script>
-    <script src="./JavaScript/main.js"></script>
-    <!-- Site navigation -->
+    <script src="js/anime.min.js"></script>
+    <script src="js/pieces.min.js"></script>
+    <script src="js/demo.js"></script>
   </body>
 </html>
