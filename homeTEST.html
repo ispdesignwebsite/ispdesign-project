@@ -1,882 +1,109 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="no-js">
   <head>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-145760456-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-145760456-1');
-</script>
-    
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>ISP | Home</title>
-    <!-- META TAGS COMMENT -->
-    <!-- PAGE DESCRIPTION COMMENT -->
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>ISP</title>
     <meta
       name="description"
-      content="Dedicated to the art and science of lighting design, ISP Design Offers forward-thinking solutions uniquely suited to every individual project and client."
+      content="A slider made with the Pieces library where slides are animated in a fragmented look."
     />
-    <!-- KEYWORDS COMMENT -->
-    <meta name="keywords" content="lighting design" />
-    <!-- <meta name="author" content="open source" />
-<meta property="og:title" content="ISP Design" />
-<meta property="og:locale" content="en_US" />
-<meta property="og:site_name" content="ISP Design" />
-<meta property="og:url" content="https://ispdesign.com/" />
-<meta property="og:type" content="website" /> -->
-    <!-- OG TAGS COMMENT -->
-    <!-- <meta
-  property="og:image"
-  content="https://github.com/wearebrandcollective/timeline/blob/master/assets/images/ISPjournal/apple2019.gif?raw=true"
-/> -->
-    <!-- GRAPH COMMENT -->
-    <!-- <meta
-  property="og:description"
-  content="description description description description"
-/>
-<meta name="twitter:card" content="" />
-<meta name="twitter:site" content="" />
-<meta name="twitter:title" content="" />
-<meta name="twitter:description" content="" />
-<meta
-  name="twitter:image"
-  content="https://github.com/wearebrandcollective/timeline/blob/master/assets/images/ISPjournal/apple2019.gif?raw=true"
-/>
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<meta name="theme-color" content="#dab28d" /> -->
-    <!-- META TAGS COMMENT^ -->
-    <!-- favicon -->
-    <!-- <link rel="stylesheet" href="https://unpkg.com/extra.css/sparkles.js" /> -->
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="./assets/favicon_io/apple-touch-icon.png"
+    <meta
+      name="keywords"
+      content="slideshow, slider, pieces, fragments, animation, svg, canvas, javascript"
     />
+    <meta name="author" content="" />
+    <!-- <link rel="shortcut icon" href="on.ico" /> -->
     <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./assets/favicon_io/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="./assets/favicon_io/favicon-16x16.png"
-    />
-    <link rel="manifest" href="./assets/favicon_io/site.webmanifest" />
-    <!-- favicon -->
-
-    <!-- Site navigation -->
-    <link rel="stylesheet" type="text/css" href="./NAVIGATION/main.css" />
-    <link rel="stylesheet" type="text/css" href="./NAVIGATION/all.css" />
-    <!-- Site navigation -->
-    <!-- Site footer -->
-    <link rel="stylesheet" type="text/css" href="FOOTER/styles.css" />
-    <link
+      href="https://fonts.googleapis.com/css?family=Lato&display=swap"
       rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-      crossorigin="anonymous"
     />
-    <!-- local below ... -->
-    <!-- <link rel="stylesheet" href="externalLibrariesSource/bootstrapLink.css" /> -->
-    <!-- Site footer -->
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
 
-    <!-- Global css -->
-    <link rel="stylesheet" type="text/css" href="./css/important.css" />
-    <link rel="stylesheet" type="text/css" href="./css/layout.css" />
-    <link rel="stylesheet" type="text/css" href="./css/mobile.css" />
-    <!-- Global css -->
-    <!-- External lib -->
-    <!-- <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> -->
-    <!-- local below ... -->
-    <link rel="stylesheet" href="externalLibrariesSource/aos.css" />
-    <!-- External lib -->
-  </head>
-
-  <body>
-    <!-- Site navigation -->
-
-    <div
-      class="l-header-menu bgcheck headerAbsolute"
-      id="trigger-main-menu-open"
-    >
-      <div class="headerLogoAbsolute">
-        <a href="index.html"
-          ><img 
-            src="https://i.imgur.com/c0JxV4c.png" 
-            title="source: imgur.com"
-            alt="ISP Design Logo"
-            width="400"
-            height="100%"
-            class="headerLogoImage"
-         /></a>
-      </div>
-      <div id="menu" class="menu-toggle">
-        <a href="#" class="hamburger">
-          <span></span>
-          <span></span>
-          <span></span>
-        </a>
-      </div>
-    </div>
-    <div class="l-menu class overlay" id="main-menu" style="display: none">
-      <div
-        class="l-menu-close trigger-main-menu-close closebtn"
-        id="main-menu-close-button"
-      >
-        &times;
-      </div>
-
-      <div class="l-menu-active">
-        <div class="l-menu-mask"></div>
-        <div class="l-menu-mask"></div>
-        <div class="l-menu-mask"></div>
-        <div class="l-menu-mask"></div>
-
-        <div class="l-menu-link-box">
-          <!-- ----------------111\> -->
-
-          <a
-            class="l-menu-link who trigger-menu-link-pjax"
-            href="indexVision.html"
-            ><span style="opacity: 0; transform: scale(1.3) translateY(50%)"
-              >VISION</span
-            >
-            <div class="l-menu-link-border-mask">
-              <div class="l-menu-link-border"></div>
-            </div>
-          </a>
-          <div class="l-menu-bg-vision"></div>
-          <!-- ----------------111^^^\> -->
-
-          <!-- ----------------222\> -->
-          <a
-            class="l-menu-link what trigger-menu-link-pjax"
-            href="indexTimeline.html"
-            ><span style="opacity: 0; transform: scale(1.3) translateY(50%)"
-              >TIMELINE</span
-            >
-            <div class="l-menu-link-border-mask">
-              <div class="l-menu-link-border"></div>
-            </div>
-          </a>
-          <div class="l-menu-bg-timeline"></div>
-          <!-- ----------------222^^^\> -->
-
-          <!-- ----------------333\> -->
-          <a
-            class="l-menu-link projects trigger-menu-link-pjax"
-            href="indexInnovation.html"
-            ><span
-              class="inno"
-              style="opacity: 0; transform: scale(1.3) translateY(50%)"
-              >INNOVATION</span
-            >
-            <div class="l-menu-link-border-mask">
-              <div class="l-menu-link-border"></div>
-            </div>
-          </a>
-          <div class="l-menu-bg-innovaation"></div>
-          <!-- ----------------333^^^\> -->
-
-          <!-- ----------------444\> -->
-          <a
-            class="l-menu-link career trigger-menu-link-pjax"
-            href="indexExpertise.html"
-            ><span
-              class="expert"
-              style="opacity: 0; transform: scale(1.3) translateY(50%)"
-              >EXPERTISE</span
-            >
-            <div class="l-menu-link-border-mask">
-              <div class="l-menu-link-border"></div>
-            </div>
-          </a>
-          <div class="l-menu-bg-expertise"></div>
-          <!-- ----------------444^^^\> -->
-
-          <!-- ----------------555\> -->
-          <a class="l-menu-link contact no-barba" href="indexTeam.html"
-            ><span style="opacity: 0; transform: scale(1.3) translateY(50%)"
-              >TEAM</span
-            >
-            <div class="l-menu-link-border-mask">
-              <div class="l-menu-link-border"></div>
-            </div>
-          </a>
-          <div class="l-menu-bg-team"></div>
-          <!-- ----------------555^^^\> -->
-          <!-- ----------------666\> -->
-          <a class="l-menu-link contact no-barba" href="indexClients.html"
-            ><span style="opacity: 0; transform: scale(1.3) translateY(50%)"
-              >CLIENTS</span
-            >
-            <div class="l-menu-link-border-mask">
-              <div class="l-menu-link-border"></div>
-            </div>
-          </a>
-          <div class="l-menu-bg-clients"></div>
-          <!-- ----------------666^^^\> -->
-          <!-- ----------------blog\> -->
-          <a
-            class="l-menu-link contact no-barba"
-            href="http://blog.ispdesign.com/"
-            ><span style="opacity: 0; transform: scale(1.3) translateY(50%)"
-              >BLOG</span
-            >
-            <div class="l-menu-link-border-mask">
-              <div class="l-menu-link-border"></div>
-            </div>
-          </a>
-          <div class="l-menu-bg-blog"></div>
-          <!-- ----------------blog^^^\> -->
-          <!-- ----------------777\> -->
-          <a class="l-menu-link contact no-barba" href="indexContact.html"
-            ><span style="opacity: 0; transform: scale(1.3) translateY(50%)"
-              >CONTACT</span
-            >
-            <div class="l-menu-link-border-mask">
-              <div class="l-menu-link-border"></div>
-            </div>
-          </a>
-          <div class="l-menu-bg-contact"></div>
-          <!-- ----------------777^^^\> -->
-        </div>
-
-        <div class="l-menu-lang-social">
-          <div class="l-menu-lang-social-box">
-            <div class="l-menu-social-link-container">
-              <div class="header-address">
-                <a
-                  class="header-address-text-a"
-                  href="https://www.google.com/maps/place/Isp+Design/@25.6094843,-80.3469453,15z/data=!4m2!3m1!1s0x0:0xea067565c96909ec?sa=X&ved=2ahUKEwj90bHXmb_jAhUKvFkKHfJPDZAQ_BIwdXoECGQQCA"
-                  target="_blank"
-                  rel="noopener"
-                  ><p>17225 SOUTH DIXIE HWY. STE 201, MIAMI, FL 33157</p></a
-                >
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="l-menu-bg-container">
-        <div class="l-menu-bgs" id="bg1" style="transform: skewX(-74.707deg)">
-          <div
-            class="l-menu-bg"
-            style="
-              width: 10%;
-              transform: translateX(-50%) translateY(-100%) skewX(0deg);
-            "
-          ></div>
-        </div>
-        <div class="l-menu-bgs2" id="bg2">
-          <div
-            class="l-menu-bg"
-            style="transform: translateX(-100%) skewX(74.707deg)"
-          ></div>
-        </div>
-      </div>
-    </div>
-    <!-- Site navigation -->
-
-    <!-- Main header -->
-    <div class="home-section1">
-      <iframe
-        title="animation-mobile"
-        src="https://ispdesignwebsite.github.io/ispdesign-animation-mobile/"
-        frameborder="0"
-        id="homeIframeMobile"
-        scrolling="no"
-      ></iframe>
-      <!-- test -->
-      <iframe
-        title="animation"
-        src="https://ispdesignwebsite.github.io/ispdesign-animation/"
-        frameborder="0"
-        id="homeIframe"
-        scrolling="no"
-      ></iframe>
-      <div class="headerAddressDiv">
-        <span
-          ><a
-            class="headerAddress"
-            style="position: absolute; left: 10vw; bottom: 5vh"
-            style="text-decoration: underline"
-            href="mailto:contact@ispdesign.com"
-            >CONTACT@ISPDESIGN.COM</a
-          ></span
-        >
-      </div>
-    </div>
-    <!-- Main header -->
-
-    <!-- paragraph -->
-    <div
-      class="container mb-5 mt-5"
-      data-aos="fade-up"
-      data-aos-duration="1500"
-    >
-      <div class="row">
-        <div class="col-sm-12"></div>
-        <div class="col">
-          <p class="homeTextOne layout-home-s1">
-            Dedicated to the art and science of lighting design, ISP Design
-            emphasizes that the combination of
-            <span><a class="signatureATag" href="">lights and design</a></span>
-            is more than illumination engineering. It is the careful synthesis
-            of architecture and light that integrates
-            <span
-              ><a class="signatureATag" href=""
-                >aesthetics and performance.</a
-              ></span
-            >
-            ISP Design is the embodiment of experience, imagination and
-            innovation in the successful execution of lighting design.
-          </p>
-        </div>
-        <div class="col-sm-12"></div>
-      </div>
-    </div>
-    <!-- paragraph -->
-
-    <!-- the slider -->
-    <div
-      id="carouselIndicators3"
-      class="carousel bg-sand bg-sand-onMobileBlack"
-      data-ride="carousel"
-      data-interval="5000"
-      data-interval="5000"
-      data-aos="fade-up"
-      data-aos-duration="1500"
-    >
-      <div class="carousel-inner">
-        <!-- item1 -->
-        <div class="carousel-item active fadeInStuffSlidersAnimation">
-          <div class="">
-            <div class="row">
-              <div class="col-sm slider3-classes-change-1"></div>
-              <ol class="carousel-indicators3">
-                <li
-                  data-target="#carouselIndicators3"
-                  data-slide-to="0"
-                  class="active"
-                ></li>
-                <li data-target="#carouselIndicators3" data-slide-to="1"></li>
-                <li data-target="#carouselIndicators3" data-slide-to="2"></li>
-                <li data-target="#carouselIndicators3" data-slide-to="3"></li>
-              </ol>
-              <div
-                class="col-sm slider3-layout slider3-classes-change-1-mobile"
-              >
-                <p class="indi3p1">INNOVATION</p>
-                <h5 class="mt-5 mb-5 indi3h1">PATHWAY LIGHT</h5>
-
-                <p class="ml-5 mt-5 mb-5 indi3p2">
-                  ISP Design and Villa Neri partnered up to develop a custom
-                  quick-connect pathway light. A smart control system that
-                  integrates both Bluetooth and Wi-Fi that can work on any
-                  gateway.
-                </p>
-                <span>
-                  <a
-                    class="indi3a pl-5"
-                    href="indexInnovation.html#pathwaylight"
-                    onclick="goto('goto-pathwaylight')"
-                    style="z-index: 999"
-                    >Learn More</a
-                  ></span
-                >
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- item2 -->
-        <div class="carousel-item fadeInStuffSlidersAnimation">
-          <div class="">
-            <div class="row">
-              <div class="col-sm slider3-classes-change-2"></div>
-              <ol class="carousel-indicators3">
-                <li data-target="#carouselIndicators3" data-slide-to="0"></li>
-                <li
-                  data-target="#carouselIndicators3"
-                  data-slide-to="1"
-                  class="active"
-                ></li>
-                <li data-target="#carouselIndicators3" data-slide-to="2"></li>
-                <li data-target="#carouselIndicators3" data-slide-to="3"></li>
-              </ol>
-              <div
-                class="col-sm slider3-layout slider3-classes-change-2-mobile"
-              >
-                <p class="indi3p1">INNOVATION</p>
-                <h5 class="mt-5 mb-5 indi3h1">
-                  GRID MODULAR <br />
-                  CEILING SYSTEM
-                </h5>
-                <p class="ml-5 mt-5 mb-5 indi3p2">
-                  ISP Design and Price Industries designed and manufactured a
-                  state of the art grid modular ceiling system and control
-                  solution featuring interlocking components for easy
-                  installation and reconfiguration to accommodate evolving space
-                  requirements.
-                </p>
-                <span>
-                  <a
-                    class="indi3a pl-5"
-                    href="indexInnovation.html#goto-grid"
-                    onclick="goto('goto-grid')"
-                    >Learn More</a
-                  ></span
-                >
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- item3 -->
-        <div class="carousel-item fadeInStuffSlidersAnimation">
-          <div class="">
-            <div class="row">
-              <div class="col-sm slider3-classes-change-3"></div>
-              <ol class="carousel-indicators3">
-                <li data-target="#carouselIndicators3" data-slide-to="0"></li>
-                <li data-target="#carouselIndicators3" data-slide-to="1"></li>
-                <li
-                  data-target="#carouselIndicators3"
-                  data-slide-to="2"
-                  class="active"
-                ></li>
-                <li data-target="#carouselIndicators3" data-slide-to="3"></li>
-              </ol>
-              <div
-                class="col-sm slider3-layout slider3-classes-change-3-mobile"
-              >
-                <p class="indi3p1">INNOVATION</p>
-                <h5 class="mt-5 mb-5 indi3h1">PENDANT FIXTURE</h5>
-                <p class="ml-5 mt-5 mb-5 indi3p2">
-                  Richter and ISP Design developed a pendant fixture that
-                  embodies “smart thinking for lighting systems”. Masterfully
-                  allowing the end user to easily adjust the LED fixture, its
-                  seamless profile makes for an impactful look to any space.
-                </p>
-                <span>
-                  <a
-                    class="indi3a pl-5"
-                    href="indexInnovation.html#goto-pendantfixtures"
-                    onclick="goto('goto-pendantfixtures')"
-                    >Learn More</a
-                  ></span
-                >
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- item4 -->
-        <div class="carousel-item fadeInStuffSlidersAnimation">
-          <div class="">
-            <div class="row">
-              <div class="col-sm slider3-classes-change-4"></div>
-              <ol class="carousel-indicators3">
-                <li data-target="#carouselIndicators3" data-slide-to="0"></li>
-                <li data-target="#carouselIndicators3" data-slide-to="1"></li>
-                <li data-target="#carouselIndicators3" data-slide-to="2"></li>
-                <li
-                  data-target="#carouselIndicators3"
-                  data-slide-to="3"
-                  class="active"
-                ></li>
-              </ol>
-              <div
-                class="col-sm slider3-layout slider3-classes-change-4-mobile"
-              >
-                <p class="indi3p1">INNOVATION</p>
-                <h5 class="mt-5 mb-5 indi3h1">FLASH MATE®</h5>
-                <p class="ml-5 mt-5 mb-5 indi3p2">
-                  Amphenol LTW and ISP Design designed an innovative cabling
-                  solution called Flash Mate®. Offering efficient, flexible
-                  reworks for the ever changing spaces in today’s commercial and
-                  residential markets, this forward-thinking solution has
-                  architects and developers reimagining the architectural and
-                  design framework.
-                </p>
-                <br class="hideAtDesktop" />
-                <br class="hideAtDesktop" />
-                <br class="hideAtDesktop" />
-                <br class="hideAtDesktop" />
-                <span>
-                  <a
-                    class="indi3a pl-5"
-                    href="indexInnovation.html#goto-flashmate"
-                    onclick="goto('goto-flashmate')"
-                    >Learn More</a
-                  ></span
-                >
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- end item -->
-      </div>
-      <!-- slidingIndicator -->
-      <div id="slidingIndicator" class="hideAtDesktop">
-        <div
-          class="slidingIndicator-box animateTrigger fadeInLeft-func slidingIndicator-actual"
-        >
-          <div id="gradient" class="hideAtDesktop">< swipe ></div>
-        </div>
-      </div>
-      <!-- slidingIndicator -->
-    </div>
-    <!-- the slider -->
-
-    <!-- section -->
-    <div class="container mt-5" data-aos="fade-up" data-aos-duration="1500">
-      <div class="col m-0 p-0">
-        <img
-          src="./assets/images/home/section4.jpg"
-          class="img-fluid justOnHover"
-          alt="Team Discussing Plans"
-          id="menuImg"
-          onmouseover="onHover();"
-          onmouseout="offHover();"
-        />
-        <h1 class="text-center homeTextTwo layout-home-s3 FONTSIZE35">
-          MORE THAN ILLUMINATION ENGINEERING
-        </h1>
-        <p class="text-center m-5 homeTextThree">
-          At the forefront of our methodology is innovation. Offering
-          forward-thinking solutions uniquely suited to every individual
-          project, our team delivers unrivaled performance and project
-          management. With a superior understanding of architecture, building
-          construction and space planning, our distinct, hands-on approach
-          brings a wealth of experience to the lighting design process.
-        </p>
-        <div class="text-center mt-5 mb-5">
-          <a href="indexVision.html"
-            ><button class="generalBtnStyle hang">OUR VISION</button></a
-          >
-        </div>
-      </div>
-    </div>
-    <!-- section -->
-    <!-- section -->
-    <div>
-      <div
-        class="container prj-management-container"
-        data-aos="fade-up"
-        data-aos-duration="1500"
-      >
-        <div
-          id="carouselIndicators2"
-          class="carousel"
-          data-ride="carousel"
-          data-interval="5000"
-        >
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <div class="container prj-mgm-section">
-                <div class="row reverse-show-at-mobile">
-                  <div class="col-sm">
-                    <img
-                      width="300"
-                      class="d-block w-500 m-auto"
-                      src="./assets/images/home/prj-mgm-2.jpg"
-                      alt="Team member stating an opinion"
-                    />
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col-sm prj-mgm-section2">
-                    <p class="indi2p1">EXPERTISE</p>
-                    <h5 class="indi2h1 mt-5 mb-5 FONTSIZE35">
-                      PROJECT MANAGEMENT
-                    </h5>
-                    <p class="indi2p2 ml-5 mt-5 mb-5">
-                      Providing more than basic design, ISP Design sets itself
-                      apart from the competition with a truly hands-on project
-                      management style. Working side-by-side with architects,
-                      engineers, general contractors and electrical contractors,
-                      our professionals oversee every phase of the project
-                      beginning with design development, construction documents,
-                      cost analysis, construction administration and maintenance
-                      manuals.
-                    </p>
-                    <a
-                      class="normalATag"
-                      href="indexTeam.html#scopeOfService"
-                      onclick="goto2('goto-scopeOfService')"
-                    >
-                      <button class="generalBtnStyle hang ml-4 val">
-                        VIEW ALL SERVICES
-                      </button>
-                    </a>
-                  </div>
-                  <div class="row reverse-hide-at-mobile">
-                    <div class="col-sm">
-                      <img
-                        class="d-block w-500"
-                        src="./assets/images/home/prj-mgm-2.jpg"
-                        alt="Team member stating an opinion"
-                      />
-                    </div>
-                  </div>
-                </div>
-
-                <!-- 2020 blog  -->
-                <!-- <div class="blog-section">
-                  <div class="">
-                    <div class="">
-                      <img
-                        id="js-blog-img"
-                        class="blog-img"
-                        src="./assets/images/home/blog.png"
-                        alt="Team member stating an opinion"
-                      />
-                    </div>
-                  </div>
-                  <div class="col-sm prj-mgm-section2">
-                    <p class="indi2p1 blog-p1">BLOG</p>
-                    <h5
-                      id="js-blog-heading"
-                      class="indi2h1 mt-5 mb-5 FONTSIZE35 blog-h1"
-                    >
-                      A NEW EXPANSION
-                    </h5>
-                    <p
-                      id="js-blog-description"
-                      class="indi2p2 ml-5 mt-5 mb-5 blog-p2"
-                    >
-                      At ISP Design Inc., our strong networking and referrals
-                      enabled us to acquire clients without having to construct
-                      a website or operate a social media page. This formula is
-                      still set in stone after 28 years from consulting with
-                      fortune 100 companies. Even though we have been
-                      successful, we believe that innovation is the future.
-                    </p>
-                    <div class="blog-btn">
-                      <a
-                        id="js-link-to-the-blog"
-                        class="normalATag"
-                        href="http://blog.ispdesign.com/"
-                      >
-                        <button class="generalBtnStyle hang">READ MORE</button>
-                      </a>
-                    </div>
-                  </div>
-                </div> -->
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- section -->
-
-    <!-- instagram -->
-    <div>
-      <script src="https://apps.elfsight.com/p/platform.js" defer></script>
-      <div class="elfsight-app-5b2c66fa-27fd-4517-863a-e584d84d98d4"></div>
-    </div>
-    <!-- instagram -->
-
-    <!-- Site footer -->
-    <footer class="site-footer sfh" data-aos="fade-up" data-aos-duration="1500">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-12 col-md-3">
-            <ul class="list-unstyled">
-              <li class="footerLinks"><a href="indexVision.html">VISION</a></li>
-              <li class="footerLinks">
-                <a href="indexTimeline.html">TIMELINE</a>
-              </li>
-              <li class="footerLinks">
-                <a href="indexInnovation.html">INNOVATION</a>
-              </li>
-              <li class="footerLinks">
-                <a href="indexExpertise.html">EXPERTISE</a>
-              </li>
-              <li class="footerLinks"><a href="indexTeam.html">TEAM</a></li>
-              <li class="footerLinks">
-                <a href="indexClients.html">CLIENTS</a>
-              </li>
-              <li class="footerLinks">
-                <a href="http://blog.ispdesign.com/">BLOG</a>
-              </li>
-              <li class="footerLinks">
-                <a href="indexContact.html">CONTACT</a>
-              </li>
-            </ul>
-          </div>
-
-          <div class="col-xs-6 col-md-3">
-            <ul class="list-unstyled">
-              <li>
-                <a href="tel:305-278-1565" class="footerAddress"
-                  >305 278 1565</a
-                >
-              </li>
-              <br />
-              <li>
-                <a
-                  class="footerAddress"
-                  href="https://www.google.com/maps/place/Isp+Design/@25.6094843,-80.3469453,15z/data=!4m2!3m1!1s0x0:0xea067565c96909ec?sa=X&ved=2ahUKEwj90bHXmb_jAhUKvFkKHfJPDZAQ_BIwdXoECGQQCA"
-                  target="_blank"
-                  rel="noopener"
-                  >17225 SOUTH DIXIE HWY. STE 201 <br />
-                  MIAMI, FL 33157
-                </a>
-              </li>
-              <br />
-              <li>
-                <a
-                  class="footerAddress"
-                  style="text-decoration: underline"
-                  href="mailto:contact@ispdesign.com"
-                  >CONTACT@ISPDESIGN.COM</a
-                >
-              </li>
-              <li class="mt-3">
-                <a
-                  style="display: inline-block !important"
-                  class="mr-2"
-                  href="https://www.linkedin.com/company/isp-design-inc./"
-                  target="_blank"
-                >
-                  <img width="30" src="./assets/images/general/linkedin.png"
-                /></a>
-                <a
-                  style="display: inline-block !important"
-                  href="https://www.instagram.com/ispdesigninc/"
-                  target="_blank"
-                >
-                  <img width="30" src="./assets/images/general/instagram.png"
-                /></a>
-              </li>
-            </ul>
-          </div>
-
-          <div class="col-xs-6 col-md-3"></div>
-
-          <div class="col-xs-6 col-md-3">
-            <ul class="footer-links-img">
-              <li>
-                <a href="index.html" class="absoluteFooterLogo"
-                  ><img
-                    style="float: right"
-                    src="./FOOTER/ISP-LOGO-WHITE.png"
-                    alt="ISP Design Logo"
-                /></a>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <hr />
-      </div>
-      <div class="container">
-        <div class="row">
-          <div class="col-md-8 col-sm-6 col-xs-12">
-            <div class="row footer-client-weare">
-              <div class="column mt-1">
-                <a href="index.html">
-                  <img
-                    class="footer-weare footer-links-img"
-                    src="./FOOTER/BTYBYT.png"
-                    alt="Year that website was created"
-                  />
-                </a>
-              </div>
-              <div class="column ml-2">
-                <a href="http://www.wearebrandcollective.com/"
-                  ><img
-                    class="footer-client footer-links-img"
-                    src="./FOOTER/TBC.png"
-                    alt="The Brand Collective Logo"
-                /></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-4 col-sm-6 col-xs-12 terms">
-            <ul class="list-unstyled">
-              <li style="float: right" class="footerLinks">
-                <a href="terms.html">TERMS</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </footer>
-    <!-- Site footer -->
-
-    <!-- Site footer -->
-    <script
-      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-      crossorigin="anonymous"
-    ></script>
-    <!-- local below ... -->
-    <!-- <script src="./externalLibrariesSource/jqueryScript.js"></script> -->
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-      crossorigin="anonymous"
-    ></script>
-    <!-- local below ... -->
-    <!-- <script src="./externalLibrariesSource/propper.js"></!-->
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-      crossorigin="anonymous"
-    ></script>
-    <!-- local below ... -->
-    <!-- <script src="./externalLibrariesSource/bootstrapScript.js"></script> -->
-    <!-- Site footer -->
-
-    <!-- External lib -->
-    <!-- <script src="https://unpkg.com/aos@next/dist/aos.js"></script> -->
-    <!-- local below ... -->
-    <script src="externalLibrariesSource/aos.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/base.css" />
+    <link rel="stylesheet" type="text/css" href="css/slider.css" />
     <script>
-      AOS.init();
+      document.documentElement.className = "js";
+      var supportsCssVars = function() {
+        var e,
+          t = document.createElement("style");
+        return (
+          (t.innerHTML = "root: { --tmp-var: bold; }"),
+          document.head.appendChild(t),
+          (e = !!(
+            window.CSS &&
+            window.CSS.supports &&
+            window.CSS.supports("font-weight", "var(--tmp-var)")
+          )),
+          t.parentNode.removeChild(t),
+          e
+        );
+      };
+      supportsCssVars() ||
+        alert(
+          "Please view this demo in a modern browser that supports CSS Variables."
+        );
     </script>
-    <script src="https://unpkg.com/mailgo@0.6.9/dist/mailgo.min.js"></script>
-    <!-- local below ... -->
-    <!-- <script src="externalLibrariesSource/mailgo.js"></script> -->
-    <script
-      src="//instant.page/1.2.2"
-      type="module"
-      integrity="sha384-2xV8M5griQmzyiY3CDqh1dn4z3llDVqZDqzjzcY+jCBCk/a5fXJmuZ/40JJAPeoU"
-    ></script>
-    <!-- local below ... -->
-    <!-- <script src="externalLibrariesSource/instant.js"></script> -->
-    <!-- External lib -->
-    <!-- Site navigation -->
-    <script src="./NAVIGATION/jquerry.js"></script>
-    <script src="./NAVIGATION/create.js"></script>
-    <script src="./NAVIGATION/all.js"></script>
-    <script src="./NAVIGATION/pollyfill.js"></script>
-    <script src="./JavaScript/main.js"></script>
-    <!-- <script src="https://unpkg.com/@barba/core"></script> -->
-    <!-- Site navigation -->
+  </head>
+  <body class="demo-1">
+    <div
+      id="preloadfont"
+      style="color: #20405a; font-family: 'Lato', sans-serif !important;"
+    >
+      .
+    </div>
+    <main>
+      <div class="content content--fixed"></div>
+      <div class="content">
+        <!-- Pieces Slider -->
+        <div class="pieces-slider">
+          <!-- Each slide with corresponding image and text -->
+          <div class="pieces-slider__slide">
+            <img class="pieces-slider__image" src="img/1.jpg" alt="" />
+            <h2 class="pieces-slider__text">
+              <!-- &nbsp;&nbsp;S&nbsp;&nbsp;O&nbsp;&nbsp;L&nbsp;&nbsp;U&nbsp;&nbsp;T&nbsp;&nbsp;I&nbsp;&nbsp;O&nbsp;&nbsp;N&nbsp;&nbsp;S&nbsp;&nbsp; -->
+              &nbsp;&nbsp;U&nbsp;&nbsp;N&nbsp;&nbsp;R&nbsp;&nbsp;I&nbsp;&nbsp;V&nbsp;&nbsp;A&nbsp;&nbsp;L&nbsp;&nbsp;E&nbsp;&nbsp;D&nbsp;&nbsp;
+              <!-- &nbsp;&nbsp;L&nbsp;&nbsp;I&nbsp;&nbsp;G&nbsp;&nbsp;H&nbsp;&nbsp;T&nbsp;&nbsp;I&nbsp;&nbsp;N&nbsp;&nbsp;G&nbsp;&nbsp; -->
+            </h2>
+          </div>
+          <div class="pieces-slider__slide">
+            <img class="pieces-slider__image" src="img/2.jpg" alt="" />
+            <h2 class="pieces-slider__text">
+              <!-- &nbsp;&nbsp;U&nbsp;&nbsp;N&nbsp;&nbsp;R&nbsp;&nbsp;I&nbsp;&nbsp;V&nbsp;&nbsp;A&nbsp;&nbsp;L&nbsp;&nbsp;E&nbsp;&nbsp;D&nbsp;&nbsp; -->
+              &nbsp;&nbsp;L&nbsp;&nbsp;I&nbsp;&nbsp;G&nbsp;&nbsp;H&nbsp;&nbsp;T&nbsp;&nbsp;I&nbsp;&nbsp;N&nbsp;&nbsp;G&nbsp;&nbsp;
+              <!-- &nbsp;&nbsp;S&nbsp;&nbsp;O&nbsp;&nbsp;L&nbsp;&nbsp;U&nbsp;&nbsp;T&nbsp;&nbsp;I&nbsp;&nbsp;O&nbsp;&nbsp;N&nbsp;&nbsp;S&nbsp;&nbsp; -->
+            </h2>
+          </div>
+          <div class="pieces-slider__slide">
+            <img class="pieces-slider__image" src="img/3.jpg" alt="" />
+            <h2 class="pieces-slider__text">
+              <!-- &nbsp;&nbsp;L&nbsp;&nbsp;I&nbsp;&nbsp;G&nbsp;&nbsp;H&nbsp;&nbsp;T&nbsp;&nbsp;I&nbsp;&nbsp;N&nbsp;&nbsp;G&nbsp;&nbsp; -->
+              &nbsp;&nbsp;S&nbsp;&nbsp;O&nbsp;&nbsp;L&nbsp;&nbsp;U&nbsp;&nbsp;T&nbsp;&nbsp;I&nbsp;&nbsp;O&nbsp;&nbsp;N&nbsp;&nbsp;S&nbsp;&nbsp;
+              <!-- &nbsp;&nbsp;U&nbsp;&nbsp;N&nbsp;&nbsp;R&nbsp;&nbsp;I&nbsp;&nbsp;V&nbsp;&nbsp;A&nbsp;&nbsp;L&nbsp;&nbsp;E&nbsp;&nbsp;D&nbsp;&nbsp; -->
+            </h2>
+          </div>
+          <canvas class="pieces-slider__canvas"></canvas
+          ><!-- Slider buttons: prev and next -->
+          <button
+            class="pieces-slider__button pieces-slider__button--prev hidden"
+            style=""
+          >
+            prev
+          </button>
+          <button
+            class="pieces-slider__button pieces-slider__button--next hidden"
+          >
+            next
+          </button>
+        </div>
+      </div>
+    </main>
+    <script>
+      document.getElementById("preloadfont").style.fontFamily =
+        "Lato,sans-serif";
+    </script>
+    <script src="js/anime.min.js"></script>
+    <script src="js/pieces.min.js"></script>
+    <script src="js/demo.js"></script>
   </body>
 </html>
-© 2022 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Docs
-Contact GitHub
-Pricing
-API
-Training
-Blog
-About
